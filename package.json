@@ -1,0 +1,17 @@
+{
+  "name": "url-param",
+  "version": "1.0.2",
+  "description": "get url params",
+  "author": {
+    "name": "gaoryrt",
+    "email": "gaoryrt@gmail.com",
+    "url": "gaoryrt.com"
+  },
+  "main": "index.js",
+  "keywords": [
+    "url",
+    "param",
+    "params"
+  ],
+  "license": "MIT"
+}
