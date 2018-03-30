@@ -1,9 +1,8 @@
-import urlObj from './index'
+import u from './index'
 
-const a = urlObj('a')
-const b = urlObj()['b']
-const c = urlObj().c
-
-const newObj = urlObj('https://www.google.com/search?q=url-param')
-
-console.log(a, b, c, newObj)
+console.log(u('a'))
+console.log(u()['b'])
+console.log(u().c)
+var url = u({A: 'one', B: 'two', C: 'three'})
+console.log(url)
+console.log(u(url))
