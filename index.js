@@ -11,15 +11,15 @@ exports.default = function (arg) {
       return encodeURIComponent(key) + '=' + encodeURIComponent(arg[key])
     }).join('&')
   }
-  var args = {}
-  var query = location.search.substring(1)
-  var idx = (arg || '').indexOf('?')
+  var args = {},
+  query = location.search.substring(1),
+  idx = (arg || '').indexOf('?')
   if (arg && idx >= 0) query = arg.slice(idx + 1)
   var pairs = query.split("&")
-  for (var i = 0, len = pairs.length; i < len; i++) {
+  for (var i = 0, len = pairs.length; i < len; i += 1) {
     var pos = pairs[i].indexOf('=')
     if (pos == -1) continue
-    var argname = pairs[i].substring(0, pos)
+    var argname = decodeURIComponent(pairs[i].substring(0, pos))
     var value = pairs[i].substring(pos + 1)
     args[argname] = decodeURIComponent(value)
   }
