@@ -1,5 +1,5 @@
 # url-param
-> get url params easily.
+> separate / combine url params easily.
 
 # install
 ```
@@ -8,24 +8,19 @@ $ npm install url-param
 
 # usage
 ```javascript
-// location.href = 'https://www.google.com/search?source=hp&q=url-param'
+// say `location.search` is '?a=%21&%CE%B2=2'
 import u from 'url-param'
 
-u()
-//=> { source: 'hp', q: 'url-param' }
+u()         // => {a: "!", β: "2"}
+  u('a')    // => '!'
+  u().β     // => '2'
+  u()['β']  // => '2'
 
-u('source')
-u().source
-u()['source']
-//=> 'hp'
+var search = u({ q: '⭐' })
+// => '?q=%E2%AD%90'
 
-u('q')
-u().q
-u()['q']
-//=> 'url-param'
-
-u('https://www.google.com/search?q=url-param')
-//=> { q: 'url-param' }
+u(search) // => {q: "⭐"}
+u('https://www.google.com/search?q=%E2%AD%90') // => {q: "⭐"}
 ```
 
 # License

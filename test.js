@@ -1,8 +1,6 @@
 import u from './index'
 
-console.log(u('a'))
-console.log(u()['b'])
-console.log(u().c)
-var url = u({A: 'one', B: 'two', C: 'three'})
+console.log(u('β'))
+var url = 'www.google.com' + u({ q: '⭐' })
 console.log(url)
-console.log(u(url))
+console.log(u('https://www.google.com/search?q=%E2%AD%90'))
