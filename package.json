@@ -1,7 +1,7 @@
 {
   "name": "url-param",
   "version": "1.0.8",
-  "description": "get url params",
+  "description": "separate / combine url params easily.",
   "author": {
     "name": "gaoryrt",
     "email": "gaoryrt@gmail.com",
