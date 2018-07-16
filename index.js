@@ -30,7 +30,7 @@
 
 export default arg => {
   if (typeof arg === 'object') {
-    return '?' + Object.getOwnPropertyNames(arg).map(key => encodeURIComponent(key) + '=' + encodeURIComponent(arg[key]))
+    return '?' + Object.getOwnPropertyNames(arg).map(key => encodeURIComponent(key) + '=' + encodeURIComponent(arg[key])).join('&')
   }
   const args = {}
   let query = location.search.substring(1)
