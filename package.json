@@ -1,13 +1,13 @@
 {
   "name": "url-param",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "separate / combine url params easily.",
   "author": {
     "name": "gaoryrt",
     "email": "gaoryrt@gmail.com",
     "url": "gaoryrt.com"
   },
-  "main": "index.js",
+  "main": "dist/main.js",
   "keywords": [
     "url",
     "param",
