@@ -14,9 +14,9 @@
     "param",
     "params",
     "convert",
-    "location"
+    "location",
     "search",
-    "href",
+    "href"
   ],
   "scripts": {
     "test": "jest",
