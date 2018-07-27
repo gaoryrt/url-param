@@ -1,6 +1,6 @@
 {
   "name": "url-param",
-  "version": "1.2.6",
+  "version": "1.2.8",
   "description": "switch between searchStr and paramsObj",
   "repository": "gaoryrt/url-param",
   "author": {
