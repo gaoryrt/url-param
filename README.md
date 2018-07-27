@@ -1,5 +1,5 @@
 # url-param
-> separate / combine url params easily.
+> switch between searchStr and paramsObj
 
 # install
 ```

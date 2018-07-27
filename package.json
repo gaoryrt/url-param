@@ -1,7 +1,8 @@
 {
   "name": "url-param",
   "version": "1.2.6",
-  "description": "separate / combine url params easily.",
+  "description": "switch between searchStr and paramsObj",
+  "repository": "gaoryrt/url-param",
   "author": {
     "name": "gaoryrt",
     "email": "gaoryrt@gmail.com",
@@ -11,7 +12,11 @@
   "keywords": [
     "url",
     "param",
-    "params"
+    "params",
+    "convert",
+    "location"
+    "search",
+    "href",
   ],
   "scripts": {
     "test": "jest",
