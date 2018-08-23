@@ -47,3 +47,12 @@ test(`u({a: '!', β: '2'}) returns ?a=!&%CE%B2=2`, () => {
 test(`u('?a=%21&%CE%B2=2') returns {a: '!', β: '2'}`, () => {
   expect(u('?a=%21&%CE%B2=2')).toEqual({a: '!', β: '2'})
 })
+
+test(`u('a') of a=b#123 is 'b'`, () => {
+  jsdom.reconfigure({ url: 'https://a.com/search?a=b#123' })
+  expect(u('a')).toEqual('b')
+})
+
+test(`u('a.com?a=b#123') returns {a: 'b'}`, () => {
+  expect(u('a.com?a=b#123')).toEqual({a: 'b'})
+})
