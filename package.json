@@ -6,9 +6,9 @@
   "author": {
     "name": "gaoryrt",
     "email": "gaoryrt@gmail.com",
-    "url": "gaoryrt.com"
+    "url": "https://gaoryrt.com"
   },
-  "main": "dist/main.js",
+  "main": "index.js",
   "keywords": [
     "url",
     "param",
@@ -19,16 +19,18 @@
     "href"
   ],
   "scripts": {
-    "test": "jest",
-    "build": "poi build index.js --format umd"
+    "test": "jest && codecov -t fab560f6-f47a-4db0-9159-ffb20a380de6"
   },
   "license": "MIT",
   "devDependencies": {
+    "codecov": "^3.5.0",
     "jest": "^23.4.1",
     "jest-environment-jsdom": "^23.4.0",
     "jest-environment-jsdom-global": "^1.1.0"
   },
   "jest": {
-    "testEnvironment": "jest-environment-jsdom-global"
+    "testEnvironment": "jest-environment-jsdom-global",
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
   }
 }
