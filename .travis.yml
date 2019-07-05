@@ -2,6 +2,6 @@ language: node_js
 node_js:
   - '12.4.0'
 install:
-  - npm install -g codecov
+  - npm install -g codecov jest
 script:
   - yarn test
