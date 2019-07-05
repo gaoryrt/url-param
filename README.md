@@ -3,6 +3,8 @@
 
 [![Build Status](https://travis-ci.org/gaoryrt/url-param.svg?branch=master)](https://travis-ci.org/gaoryrt/url-param)
 [![codecov](https://codecov.io/gh/gaoryrt/url-param/branch/master/graph/badge.svg)](https://codecov.io/gh/gaoryrt/url-param)
+![](https://img.badgesize.io/gaoryrt/url-param/master/dist/main.js)
+![](https://img.badgesize.io/gaoryrt/url-param/master/dist/main.js?compression=gzip)
 
 # install
 ```
