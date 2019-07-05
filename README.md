@@ -1,6 +1,9 @@
 # url-param
 > switch between searchStr and paramsObj
 
+[![Build Status](https://travis-ci.org/gaoryrt/url-param.svg?branch=master)](https://travis-ci.org/gaoryrt/url-param)
+[![codecov](https://codecov.io/gh/gaoryrt/url-param/branch/master/graph/badge.svg)](https://codecov.io/gh/gaoryrt/url-param)
+
 # install
 ```
 $ npm install url-param
