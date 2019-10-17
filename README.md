@@ -16,7 +16,7 @@ $ npm install url-param
 import { u } from 'url-param'
 ```
 
-# useage
+# usage
 ## paramsObj <=> searchStr
 ```javascript
 const searchStr = u({ q: '⭐' })
