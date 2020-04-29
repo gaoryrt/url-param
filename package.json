@@ -8,7 +8,7 @@
     "email": "gaoryrt@gmail.com",
     "url": "https://gaoryrt.com"
   },
-  "main": "index.js",
+  "main": "dist/main.js",
   "keywords": [
     "url",
     "param",
@@ -19,18 +19,27 @@
     "href"
   ],
   "scripts": {
-    "test": "jest && codecov -t fab560f6-f47a-4db0-9159-ffb20a380de6"
+    "test": "jest && codecov -t fab560f6-f47a-4db0-9159-ffb20a380de6",
+    "build": "npx babel index.js -o dist/babeled.js && npx terser dist/babeled.js -o dist/main.js"
   },
   "license": "MIT",
   "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/polyfill": "^7.8.7",
+    "@babel/preset-env": "^7.9.5",
     "codecov": "^3.5.0",
     "jest": "^24.8.0",
     "jest-environment-jsdom": "^24.8.0",
-    "jest-environment-jsdom-global": "^1.2.0"
+    "jest-environment-jsdom-global": "^1.2.0",
+    "terser": "^4.6.12"
   },
   "jest": {
     "testEnvironment": "jest-environment-jsdom-global",
     "coverageDirectory": "./coverage/",
     "collectCoverage": true
+  },
+  "dependencies": {
+    "core-js": "3"
   }
 }
